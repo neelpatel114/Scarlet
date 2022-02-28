@@ -108,6 +108,7 @@ class CameraReceiverProcess(WorkerProcess):
                 image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
 
                 # ----------------------- show images -------------------
+                print("show")
                 cv2.imshow('Image', image) 
                 cv2.waitKey(1)
         except:
